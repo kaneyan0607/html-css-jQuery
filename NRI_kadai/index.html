@@ -20,18 +20,6 @@
             </ul>
         </nav>
         <!-- パンくずリスト　-->
-        <!-- CSSに下記を記述
-
-            .breadcrumbs li::after{
-             content: '>';
-             display: inline-block;
-             padding: 0 10px; /*左右に余白*/
-            }
-
-            .breadcrumbs li:last-child::after{
-             display: none;
-            }
-            -->
         <ul class="breadcrumbs">
             <li><a href="#">NRI トップ</a></li>
             <li><a href="#">企業情報</a></li>
@@ -40,16 +28,17 @@
     </header>
     <main>
         <section class="main-content">
-            <div class="top-container"> <!-- CSSでtop-containerにbackground-imageを挿入　-->
+            <div class="top-container">
+                <!-- CSSでtop-containerにbackground-imageを挿入　-->
                 <p>NRIの強み</p>
                 <h1>NRIのデジタルビジネス戦略</h1>
             </div>
-            <ul class="snscontents"> <!--CSSでcontent:share;を挿入　※snscontents:beforeを指定 -->
+            <ul class="snscontents">
+                <!--CSSでcontent:share;を挿入　※snscontents:beforeを指定 -->
                 <li><a href="#"><img src="NRI_images/icon-facebook.svg"></a></li>
                 <li><a href="#"><img src="NRI_images/icon-twitter.svg"></a></li>
                 <li><a href="#"><img src="NRI_images/icon-linkedin.svg"></a></li>
             </ul>
-
             <div class="message-wrapper">
                 <section class="strategy">
                     <h2>NRIのデジタルビジネス戦略</h2>
@@ -62,14 +51,16 @@
                     <img src="NRI_images/story06_img_01.jpg">
                     <p class="btn"><a href="#">デジタルが拓く近未来（NRIのDX）<br>
                             （4.06 MB）</a></p>
-                    <div class="prev">　<!-- dislpay:flexで左右に配置 -->
+                    <div class="prev">　
+                        <!-- dislpay:flexで左右に配置 -->
                         <p><a href="#">&lt; ビジネスモデルの特徴</a></p>
                         <p><a href="#">人材が支えるNRI &gt;</a></p>
                     </div>
                 </section>
                 <section class="strong-point">
                     <p><strong>NRIの強み</strong></p>
-                    <ul class="strong-list"> <!-- display:flex flex-wrap:wrap -->
+                    <ul class="strong-list">
+                        <!-- display:flex flex-wrap:wrap -->
                         <li><a href="#">NRIのあゆみと持続な成長</a></li>
                         <li><a href="#">問題発見から問題解決まで</a></li>
                         <li><a href="#">強固な顧客基盤</a></li>
@@ -149,7 +140,8 @@
             <li><a href="#"><img src="NRI_images/icon-twitter.svg"></a></li>
             <li><a href="#"><img src="NRI_images/icon-linkedin.svg"></a></li>
         </ul>
-        <div class="general-list"> <!-- display:flex -->
+        <div class="general-list">
+            <!-- display:flex -->
             <section>
                 <ul>
                     <li><a href="#"><span>ナレッジサイト</span></a></li>
@@ -230,7 +222,7 @@
     </main>
     <footer>
         <ul class="footer-nav">
-            <!-- li + li {border-left: 1px solid #000;} -->
+            <!-- パンくずリスト　li + li {border-left: 1px solid #000;} -->
             <li><a href="#">免責条項</a></li>
             <li><a href="#">サイト利用規定</a></li>
             <li><a href="#">個人情報保護方針</a></li>
