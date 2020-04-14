@@ -177,9 +177,9 @@ main{
 
 .breadcrumbs{
     display: flex;
-    margin-left: 180px;
-    margin-bottom: 30px;
     width: 380px;
+    width: 1255px;
+    margin: 0 auto 30px auto;
 }
 
 .breadcrumbs a{
@@ -210,21 +210,23 @@ main{
     color: #fff;
     box-sizing: border-box;
     height: 250px;
-    padding: 50px 0px  0px 370px;
+    padding: 50px 0  0;
     margin-bottom: 30px;
 }
 
 .top-container h1{
     font-weight: normal;
     font-size: 20px;
-    width: 100px;
+    width: 1000px;
+    margin: 0 auto 30px auto;
 }
 
 .top-container p{
     margin: 16px 0 10px;
     font-size: 28px;
-    width: 380px;
     font-weight: 600;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 /* snscontents */
