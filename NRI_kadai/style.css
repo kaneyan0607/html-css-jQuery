@@ -131,13 +131,20 @@ header{
     padding-right: 20px;
 }
 
+.header-nav-list:nth-child(8){
+    margin-right: 100px;
+}
+
 .header-nav-list a{
+    display: block;
+    line-height: 65px;
     color: #000;
 }
 
 .header-nav-list a:hover{
     color: #0c419a;
-    transition: all 0.5s;
+    transition: all 0.2s;
+    border-bottom: 2px solid  #0c419a;
 }
 
 .header-icon{
@@ -170,7 +177,7 @@ main{
 
 .breadcrumbs{
     display: flex;
-    margin-left: 110px;
+    margin-left: 180px;
     margin-bottom: 30px;
     width: 380px;
 }
@@ -199,10 +206,11 @@ main{
 .top-container{
     background-image: url(NRI_images/h1_whats_2.jpg);
     background-size: cover;
+    background-position: center;
     color: #fff;
     box-sizing: border-box;
     height: 250px;
-    padding: 50px 0px  0px 278px;
+    padding: 50px 0px  0px 370px;
     margin-bottom: 30px;
 }
 
@@ -385,10 +393,13 @@ main{
     border: 1px solid #ccc;
     flex: auto;
     width: 130px;
-    padding: 15px 20px;
+    padding: 15px 21px;
     margin: 0px 10px 20px 10px;
     cursor: pointer;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .strong-list li:hover{
@@ -397,10 +408,7 @@ main{
 }
 
 .strong-point a{
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .strong-list a:before{
