@@ -213,6 +213,8 @@ header ul li:last-child{
     font-size: 23px;
     text-align: center;
     margin-bottom: 48px;
+    font-weight: normal;
+    letter-spacing: 2.3px;
 }
 
 .news-img{
