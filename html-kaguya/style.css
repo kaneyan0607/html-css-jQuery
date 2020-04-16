@@ -266,6 +266,7 @@ figcaption{
     font-size: 18px;
     color: #3B3B3B;
     letter-spacing: 0.9px;
+    opacity: 0.3;
 }
 
 .news-wrapper p{
@@ -278,11 +279,6 @@ figcaption{
     bottom: 1px;
     left: 7px;
     opacity: 0.7;
-}
-
-.news-wrapper a:hover{
-    opacity: 0.5;
-    transition: all 0.5s;
 }
 
 /* download-wrapper */
@@ -401,6 +397,7 @@ figcaption{
     font-size: 18px;
     color: #3B3B3B;
     letter-spacing: 0.9px;
+    opacity: 0.3;
 }
 
 /* footer */
