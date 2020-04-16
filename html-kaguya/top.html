@@ -7,6 +7,7 @@
     <title>We propose a life.</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <img src="images/logo_header.png" alt="HTML-CSS">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="#" class="home-nav">HOME</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="recruit.html">RECRUIT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -23,32 +24,35 @@
     </header>
     <main>
         <section class="top-wrapper">
-            <h1>We propose a life</h1><!-- backgroundでimg挿入 -->
+            <h1>We propose a life.</h1><!-- backgroundでimg挿入 -->
         </section>
-        <article class="concept-wrapper"><!-- backgroundでimg挿入 -->
+        <article class="concept-wrapper">
+            <!-- backgroundでimg挿入 -->
             <h2>暮らしを提案する。</h2>
             <p>私たちは、家具を売るのではなく、お客様の理想とする<br>
-                「暮らし」を提案します。</p>
-            <p>仕事で疲れた後に帰りたくなる、<br>
+                「暮らし」を提案します。<br>
+                仕事で疲れた後に帰りたくなる、<br>
                 今日も１日頑張ろうと思える、<br>
                 そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
         </article>
         <section class="news-wrapper">
             <h2>NEWS</h2>
-            <figure class="news-icon">
-                <!-- positon:relative -->
-                <img src="images/news01.png" alt="ライトブルーのカウチ">
-                <figcaption>アームストロングのカウチ入荷</figcaption><!-- positon:absolute -->
-            </figure>
-            <figure class="news-icon">
-                <img src="images/news02.png" alt="赤のチェア">
-                <figcaption>アームストロングのチェア再入荷</figcaption>
-            </figure>
-            <figure class="news-icon">
-                <img src="images/news03.png" alt="丸いテーブル">
-                <figcaption>アームストロングのテーブル入荷</figcaption>
-            </figure>
-            <a href="#">view more<i class="fas fa-chevron-right"></i></a>
+            <div class="news-img">
+                <figure class="news-icon">
+                    <!-- positon:relative -->
+                    <img src="images/news01.png" alt="ライトブルーのカウチ">
+                    <figcaption>アームストロングのカウチ入荷</figcaption><!-- positon:absolute -->
+                </figure>
+                <figure class="news-icon">
+                    <img src="images/news02.png" alt="赤のチェア">
+                    <figcaption>アームストロングのチェア再入荷</figcaption>
+                </figure>
+                <figure class="news-icon">
+                    <img src="images/news03.png" alt="丸いテーブル">
+                    <figcaption class="news-font">アームストロングのテーブル入荷</figcaption>
+                </figure>
+            </div>
+            <p><a href="#">view more<i class="fas fa-chevron-right"></i></a></p>
         </section>
         <section class="download-wrapper">
             <h2>公式カタログ</h2>
