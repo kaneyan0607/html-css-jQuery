@@ -180,9 +180,8 @@ header ul li:last-child{
     background-size: 560px 560px;
     height: 560px;
     position: relative;
-    margin-left: 9%;
-    width: 1000px;
-    margin-bottom: 240px;
+    margin: 0 auto 240px auto;
+    width: 1100px;
 }
 
 .concept-wrapper h2{
@@ -248,10 +247,6 @@ figcaption{
     color: #FFFFFF;
     font-size: 17px;
     text-shadow: 0px 0px 6px #000000E0;
-}
-
-.news-font{
-    font-size: 14px;
 }
 
 .news-icon{
@@ -352,6 +347,8 @@ figcaption{
     height: 200px;
     margin-bottom: 40px;
     padding-top: 10px;
+    font-family: "Noto Sans", sans-serif;
+    resize: none;
 }
 
 .contact-submit{
