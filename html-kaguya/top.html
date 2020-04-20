@@ -12,7 +12,8 @@
 
 <body>
     <header>
-        <img src="images/logo_header.png" alt="HTML-CSS">
+        <img src="images/logo_header.png" alt="HTML-CSS" class="logo-pc">
+        <img src="images/logo_footer 2.png" alt="HTML-CSS" class="logo-media"> <!--　レスポンシブ　-->
         <nav>
             <ul>
                 <li><a href="#" class="home-nav">HOME</a></li>
@@ -21,19 +22,32 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        <a href="#" class="header-icon"><i class="fas fa-bars"></i></a> <!--　レスポンシブ　-->
     </header>
     <main>
         <section class="top-wrapper">
             <h1>We propose a life.</h1><!-- backgroundでimg挿入 -->
+            <!-- モバイル用　-->
+            <p>We</p>
+            <p>propose</p>
+            <p>a life.</p>
         </section>
         <article class="concept-wrapper">
             <!-- backgroundでimg挿入 -->
             <h2>暮らしを提案する。</h2>
-            <p>私たちは、家具を売るのではなく、お客様の理想とする<br>
+            <p class="concept-pc">私たちは、家具を売るのではなく、お客様の理想とする<br>
                 「暮らし」を提案します。<br>
                 仕事で疲れた後に帰りたくなる、<br>
                 今日も１日頑張ろうと思える、<br>
                 そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
+            <p class="concept-media">
+                私たちは、家具を売るのではなく、<br>
+                お客様の理想とする<br>
+                「暮らし」を提案します。<br>
+                仕事で疲れた後に帰りたくなる、<br>
+                今日も１日頑張ろうと思える、<br>
+                そんな空間をお客様と一緒に作り上げていくのが<br>
+                私たちの仕事です。</p>
         </article>
         <section class="news-wrapper">
             <h2>NEWS</h2>
@@ -66,6 +80,7 @@
             <input type="email" placeholder="メールアドレス" class="contact">
             <textarea class="contact form" placeholder="お問い合わせ内容"></textarea>
             <input type="submit" class="contact-submit" name="send" value="SEND">
+            <input type="submit" class="contact-media-submit" name="send" value="Send">
         </section>
         <section class="recruit">
             <h2>RECRUIT</h2>
