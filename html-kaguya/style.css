@@ -185,19 +185,6 @@ header ul li:last-child{
         margin: 0px auto;
     }
 
-    .header-icon{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 19px;
-    }
-
-    .fa-bars{
-        font-size: 35px;
-        color: #FFFFFF;
-        -webkit-text-stroke: 4px #918F89;
-    }
-
 }
 
 /* main */
@@ -237,6 +224,8 @@ header ul li:last-child{
         background-size: cover;
         margin-bottom: 88px;
         padding-top: 144px;
+        display: flex;
+        flex-direction: column;
     }
 
     .top-wrapper h1{
@@ -244,13 +233,25 @@ header ul li:last-child{
     }
 
     .top-wrapper p{
-        display: inline-block;
+        display: block;
         background-color: rgb(255, 255, 255, 0.6);
         color: #918F89;
         padding:16px 16px 16px 54px;
         font-size: 39px;
         margin-bottom: 16px;
         letter-spacing: 1.95px;
+    }
+
+    .top-wrapper p:nth-child(2){
+        width: 136px;
+    }
+
+    .top-wrapper p:nth-child(3){
+        width: 240px;
+    }
+
+    .top-wrapper p:last-child{
+        width: 190px;
     }
 }
 
