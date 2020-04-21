@@ -11,7 +11,8 @@
 
 <body>
     <header>
-        <img src="images/logo_header.png" alt="HTML-CSS">
+        <img src="images/logo_header.png" alt="HTML-CSS" class="logo-pc">
+        <img src="images/logo_header_2.png" alt="HTML-CSS" class="logo-media"> <!--　レスポンシブ　-->
         <nav>
             <ul>
                 <li><a href="top.html">HOME</a></li>
@@ -27,11 +28,13 @@
         </section>
         <section class="contact-wrapper">
             <h2>お問い合わせ</h2>
-            <p>オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。</p>
+            <p class="media-top">CONTACT</p>
+            <p class="pc-top">オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。</p>
             <input type="text" placeholder="お名前" class="contact">
             <input type="email" placeholder="メールアドレス" class="contact">
             <textarea class="contact form" placeholder="お問い合わせ内容"></textarea>
             <input type="submit" class="contact-submit" name="send" value="SEND">
+            <input type="submit" class="contact-media-submit" name="send" value="Send">
         </section>
     </main>
     <footer>

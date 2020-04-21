@@ -190,6 +190,46 @@ header ul li:last-child{
     margin-right: 96px;
 }
 
+/* header レスポンシブ　*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+.logo-media{
+    display: none;
+}
+
+.header-icon{
+    display: none;
+}
+
+@media (max-width:375px ) {
+
+    header{
+        box-sizing: border-box;
+        background-color: #918F89;
+        padding: 16px 0px;
+        position: relative;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    .logo-pc{
+        display: none;
+    }
+
+    .logo-media{
+        width: 40px;
+        display: block;
+        margin: 0px auto;
+    }
+
+}
+
 /* h1 top-wrapper */
 
 .top-wrapper{
@@ -212,6 +252,31 @@ header ul li:last-child{
     font-weight: normal;
 }
 
+/* h1 top-wrapper レスポンシブ　*/
+.top-wrapper p{
+    display: none;
+}
+
+@media (max-width:375px ) {
+    .top-wrapper{
+        background-position: right 17% bottom;
+        background-size: cover;
+        margin-bottom: 160px;
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        height: 648px;
+    }
+
+    .top-wrapper h1{
+        position: static;
+        font-size: 25px;
+        color: #FFFFFF;
+        margin: 0 auto;
+        letter-spacing: 2.5px;
+    }
+}
+
 /* contact-wrapper */
 
 
@@ -227,7 +292,7 @@ header ul li:last-child{
     margin-bottom: 40px;
 }
 
-.contact-wrapper p{
+.pc-top{
     font-size: 15px;
     letter-spacing: 0.6px;
     margin-bottom: 72px;
@@ -269,6 +334,62 @@ header ul li:last-child{
     cursor: pointer;
 }
 
+/* contact-wrapperレスポンシブ */
+
+.contact-media-submit{
+    display: none;
+}
+
+
+.media-top{
+    display: none;
+}
+
+@media (max-width:375px ){
+    .contact{
+        width: 286px;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+
+    .form{
+        height: 160px;
+        margin-bottom: 32px;
+    }
+
+    .contact-submit{
+        display: none;
+    }
+
+    .contact-media-submit{
+        display: inline;
+        background-color: #D1D1D1;
+        color: #707070;
+        padding: 12px 64px;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        border-radius: 30px;
+    }
+
+    .media-top{
+        display: block;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        margin-bottom: 32px;
+    }
+    
+    .pc-top{
+        display: none;
+    }
+
+    .contact-wrapper h2{
+        display: none;
+    }
+
+    .contact-wrapper{
+        margin-bottom: 240px;
+    }
+}
 /* footer */
 
 footer{
@@ -320,4 +441,31 @@ footer small{
     color: #FFFFFF;
     font-size: 11px;
     letter-spacing: 0.44px;
+}
+
+/* footerレスポンシブ */
+@media (max-width:375px ){
+
+    footer{
+        height: 232px;
+        padding: 72px 0px 0px 0px;
+    }
+
+    footer img{
+        position: static;
+        display: block;
+        width: 51px;
+        height: 32px;
+        margin: 0 auto;
+        margin-bottom: 82px;
+    }
+
+    footer ul{
+        display: none;
+    }
+
+    footer small{
+        font-size: 10px;
+        letter-spacing: 0.4px;
+    }
 }
