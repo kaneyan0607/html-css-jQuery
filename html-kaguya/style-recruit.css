@@ -147,6 +147,46 @@ header ul li:last-child{
     margin-right: 96px;
 }
 
+/* header レスポンシブ　*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+.logo-media{
+    display: none;
+}
+
+.header-icon{
+    display: none;
+}
+
+@media (max-width:375px ) {
+
+    header{
+        box-sizing: border-box;
+        background-color: #918F89;
+        padding: 16px 0px;
+        position: relative;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    .logo-pc{
+        display: none;
+    }
+
+    .logo-media{
+        width: 40px;
+        display: block;
+        margin: 0px auto;
+    }
+
+}
+
 /* h1 top-wrapper */
 
 .top-wrapper{
@@ -167,6 +207,31 @@ header ul li:last-child{
     top: 192px;
     margin: 0px auto 0px 228px;
     font-weight: normal;
+}
+
+/* h1 top-wrapper レスポンシブ　*/
+.top-wrapper p{
+    display: none;
+}
+
+@media (max-width:375px ) {
+    .top-wrapper{
+        background-position: right 12% bottom;
+        background-size: 2100px;
+        margin-bottom: 160px;
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        height: 648px;
+    }
+
+    .top-wrapper h1{
+        position: static;
+        font-size: 25px;
+        color: #3B3B3B;
+        margin: 0 auto;
+        letter-spacing: 2.5px;
+    }
 }
 
 /* テーブル */
@@ -234,6 +299,33 @@ table{
     height: 624px;
 }
 
+/* テーブルレスポンシブ　*/
+@media (max-width:375px ){
+
+    .recruitment{
+        font-size: 13px;
+        margin-bottom: 256px;
+    }
+
+    table{
+        width: 344px;
+    }
+
+    .job{
+        font-size: 14px;
+        width: initial;
+        padding: 0px 6px;
+    }
+
+    .occupation{
+        font-size: 15px;
+    }
+
+    td{
+        padding-left: 21px;
+    }
+}
+
 /* footer */
 
 footer{
@@ -285,4 +377,31 @@ footer small{
     color: #FFFFFF;
     font-size: 11px;
     letter-spacing: 0.44px;
+}
+
+/* footerレスポンシブ */
+@media (max-width:375px ){
+
+    footer{
+        height: 232px;
+        padding: 72px 0px 0px 0px;
+    }
+
+    footer img{
+        position: static;
+        display: block;
+        width: 51px;
+        height: 32px;
+        margin: 0 auto;
+        margin-bottom: 82px;
+    }
+
+    footer ul{
+        display: none;
+    }
+
+    footer small{
+        font-size: 10px;
+        letter-spacing: 0.4px;
+    }
 }
