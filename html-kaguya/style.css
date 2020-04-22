@@ -338,6 +338,7 @@ header ul li:last-child{
 .news-img{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .news-icon{
@@ -396,6 +397,10 @@ figcaption{
 
 /* news-wrapper レスポンシブ　*/
 @media (max-width:375px ){
+
+    .news-img{
+        margin-bottom: 0px;
+    }
 
     .news-wrapper{
         margin-bottom: 248px;
