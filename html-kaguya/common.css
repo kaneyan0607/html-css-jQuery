@@ -7,6 +7,12 @@ main, footer {
 }
 
 @media (max-width:375px) {
+    /* ヘッダーを上部に固定 */
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
     .content {
         position: absolute;
         left: 330px;
@@ -49,10 +55,10 @@ main, footer {
         transform: translateY(10px) rotate(45deg);
     }
     #btn06.active span:nth-of-type(2) {
-        left: 51%;
+        left: 200%;
         opacity: 0;
-        -webkit-transform: translateY(5px);
-        transform: translateY(5px);
+        /* -webkit-transform: translateY(0px);
+        transform: translateY(0px); */
         -webkit-animation: active-btn06-bar02 .8s forwards;
         animation: active-btn06-bar02 .8s forwards;
     }
