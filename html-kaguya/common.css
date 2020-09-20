@@ -6,12 +6,16 @@ main, footer {
     display: none;
 }
 
+.nav-media {
+    display: none;
+}
+
+/* //ハンバーガーアイコンのアクション */
+
 @media (max-width:375px) {
-    /* ヘッダーを上部に固定 */
-    header {
-        width: 100%;
-        position: fixed;
-        z-index: 10;
+    /* ハンバーガーアイコンを押した際にheaderにshdowをつける */
+    .shadow-active {
+        box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.2);
     }
     .content {
         position: absolute;
@@ -48,32 +52,70 @@ main, footer {
         bottom: 0px;
     }
     /*=============================
-    #btn06
+    #btn　ハンバーガーのアニメーション
     =============================*/
-    #btn06.active span:nth-of-type(1) {
+    #btn.active span:nth-of-type(1) {
         -webkit-transform: translateY(10px) rotate(45deg);
         transform: translateY(10px) rotate(45deg);
     }
-    #btn06.active span:nth-of-type(2) {
+    #btn.active span:nth-of-type(2) {
         left: 200%;
         opacity: 0;
-        /* -webkit-transform: translateY(0px);
-        transform: translateY(0px); */
-        -webkit-animation: active-btn06-bar02 .8s forwards;
-        animation: active-btn06-bar02 .8s forwards;
     }
-    @-webkit-keyframes active-btn06-bar02 {
+    @-webkit-keyframes active-btn-bar02 {
         100% {
             height: 0;
         }
     }
-    @keyframes active-btn06-bar02 {
+    @keyframes active-btn-bar02 {
         100% {
             height: 0;
         }
     }
-    #btn06.active span:nth-of-type(3) {
+    #btn.active span:nth-of-type(3) {
         -webkit-transform: translateY(-10px) rotate(-45deg);
         transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+/* ハンバーガーメニュー */
+
+@media (max-width:375px) {
+    .nav-media {
+        display: block;
+        position: fixed;
+        z-index: 9;
+        top: 56px;
+        left: 0;
+        background: #fff;
+        /* color: #000; */
+        text-align: center;
+        transform: translateY(-100%);
+        transition: all 0.3s;
+        width: 100%;
+        opacity: 90%;
+    }
+    .nav-media ul {
+        background: #918F89;
+        margin: 0 auto 0 auto;
+        padding: 0 0 100% 0;
+        width: 100%;
+        height: auto;
+    }
+    .nav-media ul li {
+        font-size: 1.1em;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .nav-media ul li a {
+        display: block;
+        color: #FFFFFF;
+        padding: 33px 0;
+    }
+    /* このクラスを、jQueryで付与・削除する */
+    .nav-media.active {
+        transform: translateY(0%);
     }
 }

@@ -1,76 +1,64 @@
 @charset "utf-8";
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
     color: #333;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
-nav ul {
-    list-style:none;
+.nav-pc ul {
+    list-style: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
 blockquote, q {
-    quotes:none;
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
     text-decoration: none;
 }
 
 /* change colours to suit your needs */
+
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
 }
 
 /* change colours to suit your needs */
+
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 del {
@@ -78,170 +66,171 @@ del {
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
+
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 input, select {
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
-input, textarea{
+input, textarea {
     border: none;
     outline: none;
 }
 
 /* リセットCSSここまで */
+
 /* header */
 
-body{
+body {
     background-color: #FCFCFC;
     font-family: "Noto Sans", sans-serif;
     color: #3B3B3B;
 }
 
-header{
+header {
     display: flex;
     height: 56px;
     font-size: 16px;
 }
 
-header a{
+header a {
     color: #B2B2B2;
 }
 
-.home-nav{
+.home-nav {
     color: #3B3B3B;
 }
 
-header img{
+header img {
     margin: 16px auto 0px 96px;
     width: 38px;
     height: 24px;
 }
 
-header ul{
+header ul {
     display: flex;
 }
 
-header ul li{
+header ul li {
     margin: 26px 56px 0px 0px;
 }
 
-header ul li:last-child{
+header ul li:last-child {
     margin-right: 96px;
 }
 
 /* main */
+
 /* h1 top-wrapper */
 
 /* header */
 
-body{
+body {
     background-color: #FCFCFC;
     font-family: "Noto Sans", sans-serif;
     color: #3B3B3B;
 }
 
-header{
+header {
     display: flex;
     height: 56px;
     font-size: 16px;
 }
 
-header a{
+header a {
     color: #B2B2B2;
 }
 
-.contact-nav{
+.contact-nav {
     color: #3B3B3B;
 }
 
-header img{
+header img {
     margin: 16px auto 0px 96px;
     width: 38px;
     height: 24px;
 }
 
-header ul{
+header ul {
     display: flex;
 }
 
-header ul li{
+header ul li {
     margin: 26px 56px 0px 0px;
 }
 
-header ul li:last-child{
+header ul li:last-child {
     margin-right: 96px;
 }
 
 /* header レスポンシブ　*/
 
-
-*{
+* {
     box-sizing: border-box;
 }
 
-.logo-media{
+.logo-media {
     display: none;
 }
 
-.header-icon{
+.header-icon {
     display: none;
 }
 
-@media (max-width:375px ) {
-
-    header{
+@media (max-width:375px) {
+    /* ヘッダーを上部に固定 */
+    header {
         box-sizing: border-box;
         background-color: #918F89;
         padding: 16px 0px;
-        position: relative;
+        /* position: relative; */
+        width: 100%;
+        position: fixed;
+        z-index: 10;
     }
-
-    header ul{
+    header ul {
         display: none;
     }
-
-    .logo-pc{
+    .logo-pc {
         display: none;
     }
-
-    .logo-media{
+    .logo-media {
         width: 40px;
         display: block;
         margin: 0px auto;
     }
-
 }
 
 /* h1 top-wrapper */
 
-.top-wrapper{
+.top-wrapper {
     background-image: url(images/contact_top.png);
     background-size: 100% 100%;
-    overflow:hidden;
+    overflow: hidden;
     height: 456px;
     margin-bottom: 161px;
     position: relative;
 }
 
-.top-wrapper h1{
+.top-wrapper h1 {
     box-sizing: border-box;
     color: #FCFCFC;
     font-size: 30px;
@@ -253,12 +242,13 @@ header ul li:last-child{
 }
 
 /* h1 top-wrapper レスポンシブ　*/
-.top-wrapper p{
+
+.top-wrapper p {
     display: none;
 }
 
-@media (max-width:375px ) {
-    .top-wrapper{
+@media (max-width:375px) {
+    .top-wrapper {
         background-position: right 17% bottom;
         background-size: cover;
         margin-bottom: 160px;
@@ -267,8 +257,7 @@ header ul li:last-child{
         flex-direction: column;
         height: 648px;
     }
-
-    .top-wrapper h1{
+    .top-wrapper h1 {
         position: static;
         font-size: 25px;
         color: #FFFFFF;
@@ -279,26 +268,25 @@ header ul li:last-child{
 
 /* contact-wrapper */
 
-
-.contact-wrapper{
+.contact-wrapper {
     text-align: center;
     margin-bottom: 320px;
 }
 
-.contact-wrapper h2{
+.contact-wrapper h2 {
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 2.4px;
     margin-bottom: 40px;
 }
 
-.pc-top{
+.pc-top {
     font-size: 15px;
     letter-spacing: 0.6px;
     margin-bottom: 72px;
 }
 
-.contact{
+.contact {
     display: block;
     width: 454px;
     height: 32px;
@@ -311,7 +299,7 @@ header ul li:last-child{
     font-size: 12px;
 }
 
-.form{
+.form {
     height: 200px;
     margin-bottom: 40px;
     padding-top: 10px;
@@ -319,7 +307,7 @@ header ul li:last-child{
     resize: none;
 }
 
-.contact-submit{
+.contact-submit {
     background-color: #D1D1D1;
     color: #707070;
     padding: 7px 60px;
@@ -328,7 +316,7 @@ header ul li:last-child{
     letter-spacing: 1.4px;
 }
 
-.contact-submit:hover{
+.contact-submit:hover {
     color: #fff;
     background: #918F89;
     cursor: pointer;
@@ -336,32 +324,28 @@ header ul li:last-child{
 
 /* contact-wrapperレスポンシブ */
 
-.contact-media-submit{
+.contact-media-submit {
     display: none;
 }
 
-
-.media-top{
+.media-top {
     display: none;
 }
 
-@media (max-width:375px ){
-    .contact{
+@media (max-width:375px) {
+    .contact {
         width: 286px;
         margin-bottom: 16px;
         font-size: 14px;
     }
-
-    .form{
+    .form {
         height: 160px;
         margin-bottom: 32px;
     }
-
-    .contact-submit{
+    .contact-submit {
         display: none;
     }
-
-    .contact-media-submit{
+    .contact-media-submit {
         display: inline;
         background-color: #D1D1D1;
         color: #707070;
@@ -370,37 +354,34 @@ header ul li:last-child{
         letter-spacing: 0.9px;
         border-radius: 30px;
     }
-
-    .media-top{
+    .media-top {
         display: block;
         font-size: 25px;
         letter-spacing: 2.5px;
         margin-bottom: 32px;
     }
-    
-    .pc-top{
+    .pc-top {
         display: none;
     }
-
-    .contact-wrapper h2{
+    .contact-wrapper h2 {
         display: none;
     }
-
-    .contact-wrapper{
+    .contact-wrapper {
         margin-bottom: 240px;
     }
 }
+
 /* footer */
 
-footer{
+footer {
     height: 240px;
     background-color: #918F89;
     position: relative;
     padding: 120px 224px 0px 224px;
-    box-sizing:border-box
+    box-sizing: border-box
 }
 
-footer img{
+footer img {
     position: absolute;
     top: 120px;
     left: 224px;
@@ -409,49 +390,48 @@ footer img{
     overflow: hidden;
 }
 
-nav{
+.nav-pc {
     margin-bottom: 61px;
 }
 
-footer ul{
+footer ul {
     display: flex;
 }
 
-footer li:first-child{
-    margin-left:  auto;
+footer li:first-child {
+    margin-left: auto;
 }
 
-footer li{
+footer li {
     margin-right: 32px;
 }
 
-footer li:last-child{
+footer li:last-child {
     margin-right: 0px;
 }
 
-footer a{
+footer a {
     color: #fff;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
 
-footer small{
+footer small {
     color: #FFFFFF;
     font-size: 11px;
     letter-spacing: 0.44px;
 }
 
 /* footerレスポンシブ */
-@media (max-width:375px ){
 
-    footer{
+@media (max-width:375px) {
+    footer {
         height: 232px;
         padding: 72px 0px 0px 0px;
     }
-
-    footer img{
+    footer img {
         position: static;
         display: block;
         width: 51px;
@@ -459,12 +439,10 @@ footer small{
         margin: 0 auto;
         margin-bottom: 82px;
     }
-
-    footer ul{
+    footer ul {
         display: none;
     }
-
-    footer small{
+    footer small {
         font-size: 10px;
         letter-spacing: 0.4px;
     }

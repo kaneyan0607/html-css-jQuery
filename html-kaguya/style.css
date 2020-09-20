@@ -18,7 +18,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-nav ul {
+.nav-pc ul {
     list-style: none;
 }
 
@@ -125,15 +125,15 @@ header img {
     height: 24px;
 }
 
-header ul {
+.nav-pc ul {
     display: flex;
 }
 
-header ul li {
+.nav-pc ul li {
     margin: 26px 56px 0px 0px;
 }
 
-header ul li:last-child {
+.nav-pc ul li:last-child {
     margin-right: 96px;
 }
 
@@ -152,13 +152,16 @@ header ul li:last-child {
 }
 
 @media (max-width:375px) {
+    /* ヘッダーを上部に固定 */
     header {
         box-sizing: border-box;
         background-color: #918F89;
         padding: 16px 0px;
-        /* position: relative; */
+        width: 100%;
+        position: fixed;
+        z-index: 10;
     }
-    header ul {
+    .nav-pc {
         display: none;
     }
     .logo-pc {
@@ -339,7 +342,7 @@ figcaption {
     top: 144px;
     width: 100%;
     text-align: center;
-    z-index: 10;
+    z-index: 3;
     color: #FFFFFF;
     font-size: 17px;
     text-shadow: 0px 0px 6px #000000E0;
@@ -599,7 +602,7 @@ footer img {
     overflow: hidden;
 }
 
-nav {
+.nav-pc {
     margin-bottom: 61px;
 }
 
