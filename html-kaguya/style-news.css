@@ -245,6 +245,7 @@ header ul li:last-child {
 
 .news-icon {
     position: relative;
+    margin-right: 64px;
 }
 
 .news-icon::after {
@@ -267,10 +268,6 @@ figcaption {
     color: #FFFFFF;
     font-size: 17px;
     text-shadow: 0px 0px 6px #000000E0;
-}
-
-.news-icon {
-    margin-right: 64px;
 }
 
 .news-icon:last-child {

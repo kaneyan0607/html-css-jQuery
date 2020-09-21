@@ -78,7 +78,7 @@ main, footer {
     }
 }
 
-/* ハンバーガーメニュー */
+/* ドロワーメニュー */
 
 @media (max-width:375px) {
     .nav-media {
@@ -88,7 +88,6 @@ main, footer {
         top: 56px;
         left: 0;
         background: #fff;
-        /* color: #000; */
         text-align: center;
         transform: translateY(-100%);
         transition: all 0.3s;
