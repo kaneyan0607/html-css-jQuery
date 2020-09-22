@@ -44,3 +44,15 @@ if (matchMedia('(max-width: 375px)').matches) {
         $("main").css("padding-top", height);
     });
 }
+
+//NEWSページの画像ホバー時のアニメーション　スマホサイズ以上の際に適用
+if (matchMedia('(min-width: 375px)').matches) {
+    $('.hover').on({
+        'mouseenter': function () {
+            $(this).find("figcaption").stop(true, true).slideDown(250);
+        },
+        'mouseleave': function () {
+            $(this).find("figcaption").stop(true, true).slideUp(250);
+        }
+    });
+}
