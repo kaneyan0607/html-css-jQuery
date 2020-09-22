@@ -1,3 +1,11 @@
+//ブラウザがレスポンス時にリロードする
+$(window).on("resize", function () {
+    const w = $(window).width();
+    if (w < 376) {
+        window.location = window.location;
+    }
+});
+
 //各ページへ遷移したときにフェードイン
 $(function () {
     $("main, footer").fadeIn(500);
