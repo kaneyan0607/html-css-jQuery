@@ -1,9 +1,17 @@
 //ブラウザがレスポンス時にリロードする
-$(window).on("resize", function () {
-    const w = $(window).width();
-    if (w < 376) {
-        window.location = window.location;
+let timer = 0;
+const currentWidth = window.innerWidth;
+$(window).resize(function () {
+    if (currentWidth == window.innerWidth) {
+        return;
     }
+    if (timer > 0) {
+        clearTimeout(timer);
+    }
+
+    timer = setTimeout(function () {
+        location.reload();
+    }, 200);
 });
 
 //各ページへ遷移したときにフェードイン
