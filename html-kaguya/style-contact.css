@@ -310,13 +310,14 @@ header ul li:last-child {
 .contact-submit {
     background-color: #D1D1D1;
     color: #707070;
-    padding: 7px 60px;
+    padding: 7px 0px;
+    width: 13%;
     border-radius: 16px;
     font-size: 14px;
     letter-spacing: 1.4px;
 }
 
-.contact-submit:hover {
+.send-hover:hover {
     color: #fff;
     background: #918F89;
     cursor: pointer;

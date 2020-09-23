@@ -1,4 +1,4 @@
-//ブラウザがレスポンス時にリロードする
+//ブラウザがレスポンス時にリロードする（何度もリロードしないように200ミリ秒の余裕を持たせる）
 let timer = 0;
 const currentWidth = window.innerWidth;
 $(window).resize(function () {
@@ -8,7 +8,6 @@ $(window).resize(function () {
     if (timer > 0) {
         clearTimeout(timer);
     }
-
     timer = setTimeout(function () {
         location.reload();
     }, 200);
@@ -72,3 +71,13 @@ if (matchMedia('(min-width: 375px)').matches) {
         }
     });
 }
+
+//SENDボタンを押すとアニメーション
+$(function () {
+    $('.contact-submit').click(function () {
+        $('.contact-submit').animate({ width: "30%" }, 350);
+        $('.contact-submit').val("TRANSMISSION COMPLETED");
+        //clickしたらhoverを打ち消す
+        $('.contact-submit').removeClass('send-hover');
+    });
+}); 
