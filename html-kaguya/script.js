@@ -72,7 +72,7 @@ if (matchMedia('(min-width: 375px)').matches) {
     });
 }
 
-//SENDボタンを押すとアニメーション
+//PC画面のSENDボタンを押すとアニメーション
 $(function () {
     $('.contact-submit').click(function () {
         $('.contact-submit').animate({ width: "30%" }, 350);
@@ -80,4 +80,12 @@ $(function () {
         //clickしたらhoverを打ち消す
         $('.contact-submit').removeClass('send-hover');
     });
-}); 
+});
+
+//スマホ画面のSENDボタンを押すとアニメーション
+$(function () {
+    $('.contact-media-submit').click(function () {
+        $('.contact-media-submit').animate({ width: "90%" }, 350);
+        $('.contact-media-submit').val("TRANSMISSION COMPLETED");
+    });
+});

@@ -527,10 +527,11 @@ figcaption {
         display: none;
     }
     .contact-media-submit {
-        display: inline;
+        display: inline-block;
         background-color: #D1D1D1;
         color: #707070;
-        padding: 12px 64px;
+        padding: 12px 0px;
+        width: 50%;
         font-size: 18px;
         letter-spacing: 0.9px;
         border-radius: 30px;
