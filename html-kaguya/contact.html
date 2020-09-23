@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CONTACT</title>
     <link rel="stylesheet" href="style-contact.css">
+    <link rel="stylesheet" href="common.css">
     <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
 </head>
 
@@ -13,7 +14,7 @@
     <header>
         <img src="images/logo_header.png" alt="HTML-CSS" class="logo-pc">
         <img src="images/logo_header_2.png" alt="HTML-CSS" class="logo-media"> <!--　レスポンシブ　-->
-        <nav>
+        <nav class="nav-pc">
             <ul>
                 <li><a href="top.html">HOME</a></li>
                 <li><a href="news.html">NEWS</a></li>
@@ -21,8 +22,25 @@
                 <li><a href="#" class="contact-nav">CONTACT</a></li>
             </ul>
         </nav>
+        <!-- ハンバーガーアイコン レスポンシブ-->
+        <section class="content">
+            <div class="btn-trigger" id="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
     </header>
     <main>
+        <!-- ドロワーメニュー レスポンシブ-->
+        <nav class="nav-media">
+            <ul>
+                <li><a href="top.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="#" class="contact-nav">CONTACT</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+            </ul>
+        </nav>
         <section class="top-wrapper">
             <h1>CONTACT</h1><!-- backgroundでimg挿入 -->
         </section>
@@ -33,7 +51,7 @@
             <input type="text" placeholder="お名前" class="contact">
             <input type="email" placeholder="メールアドレス" class="contact">
             <textarea class="contact form" placeholder="お問い合わせ内容"></textarea>
-            <input type="submit" class="contact-submit" name="send" value="SEND">
+            <input type="submit" class="contact-submit send-hover" name="send" value="SEND">
             <input type="submit" class="contact-media-submit" name="send" value="Send">
         </section>
     </main>
@@ -49,6 +67,8 @@
         </nav>
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

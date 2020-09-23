@@ -1,0 +1,120 @@
+main, footer {
+    display: none;
+}
+
+.content {
+    display: none;
+}
+
+.nav-media {
+    display: none;
+}
+
+/* //ハンバーガーアイコンのアクション */
+
+@media (max-width:375px) {
+    /* ハンバーガーアイコンを押した際にheaderにshdowをつける */
+    .shadow-active {
+        box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    }
+    .content {
+        position: absolute;
+        left: 330px;
+        top: 16px;
+        display: block;
+    }
+    .btn-trigger {
+        position: relative;
+        width: 29px;
+        height: 22px;
+        cursor: pointer;
+    }
+    .btn-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 7px;
+    }
+    .btn-trigger, .btn-trigger span {
+        display: inline-block;
+        transition: all .5s;
+        box-sizing: border-box;
+    }
+    .btn-trigger span:nth-of-type(1) {
+        top: 0;
+    }
+    .btn-trigger span:nth-of-type(2) {
+        top: 10px;
+    }
+    .btn-trigger span:nth-of-type(3) {
+        bottom: 0px;
+    }
+    /*=============================
+    #btn　ハンバーガーのアニメーション
+    =============================*/
+    #btn.active span:nth-of-type(1) {
+        -webkit-transform: translateY(10px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
+    }
+    #btn.active span:nth-of-type(2) {
+        left: 200%;
+        opacity: 0;
+    }
+    @-webkit-keyframes active-btn-bar02 {
+        100% {
+            height: 0;
+        }
+    }
+    @keyframes active-btn-bar02 {
+        100% {
+            height: 0;
+        }
+    }
+    #btn.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+/* ドロワーメニュー */
+
+@media (max-width:375px) {
+    .nav-media {
+        display: block;
+        position: fixed;
+        z-index: 9;
+        top: 56px;
+        left: 0;
+        background: #fff;
+        text-align: center;
+        transform: translateY(-100%);
+        transition: all 0.3s;
+        width: 100%;
+        opacity: 90%;
+    }
+    .nav-media ul {
+        background: #918F89;
+        margin: 0 auto 0 auto;
+        padding: 0 0 100% 0;
+        width: 100%;
+        height: auto;
+    }
+    .nav-media ul li {
+        font-size: 1.1em;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .nav-media ul li a {
+        display: block;
+        color: #FFFFFF;
+        padding: 33px 0;
+    }
+    /* このクラスを、jQueryで付与・削除する */
+    .nav-media.active {
+        transform: translateY(0%);
+    }
+}
